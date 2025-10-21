@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Inventario Gastronómico</title>
+  </head>
+  <body>
+    <header>
+      <!-- header que contiene el titulo y datos del ususario -->
+      <h1>Inventario Gastronómico</h1>
+      <div class="barra-usuario">
+        <span>aquí va el nombre de usuario</span>
+        <span>aquí va la fecha y hora</span>
+        <span>aquí van las notificaciones</span>
+      </div>
+    </header>
+
+    <main>
+      <div class="contenedor-menu">
+        <!-- menú al costado de la página -->
+        <aside class="menu">
+          <label for="insumos">Menú</label>
+
+          <!-- menú de ingreso y egreso de insumos -->
+          <ul class="tipo-insumos">
+            <li>Ingreso Insumos</li>
+            <li>Egreso insulos</li>
+          </ul>
+
+          <!-- menú de herramientas -->
+          <ul class="herramientas">
+            <li>Herramientas</li>
+          </ul>
+
+          <!-- menú de equipamiento -->
+          <ul class="equipamiento">
+            <li>Equipamiento</li>
+          </ul>
+        </aside>
+      </div>
+
+      <!-- area de ingreso de insumos-->
+      <div class="panel-ingresos">
+        <h2>Ingresos Insumos</h2>
+        <label for="movimiento-insumo">Insumo:</label>
+        <input type="text" id="movimiento-insumo">
+      </div>
+    </main>
+  </body>
+</html>
