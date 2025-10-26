@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Control de Inventario - taller de Gastronomia</title>
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+<body>
+    <header>
+        <h1>Control de Inventario - taller de Gastronomia</h1>
+        <nav>
+            <!-- menú de selección -->
+            <ul>
+                <li><a href="#insumos">Insumos</a></li>
+                <li><a href="#herramientas">Herramientas</a></li>
+                <li><a href="#prestamos">Prestamos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- 
+        ============================
+        control de insumos
+        ============================
+        registro de entrada y salida de insumos
+          -->
+        <section id="insumos" class="card">
+            <h2>Entrada / Salida de Insumos</h2>
+            <form>
+                <label for="nombre-insumo">Nombre del Insumo:</label>
+                <input type="text" id="nombre-insumo" placeholder="Harina, Aceite" required>
+
+                <label for="cantidad-insumo">Cantidad:</label>
+                <input type="number" id="cantidad-insumo" min="1" required>
+
+                <label for="tipo-movimiento">Tipo de Movimiento:</label>
+                <select id="tipo-movimiento" required>
+                    <option value="entrada">Entrada</option>
+                    <option value="salida">Salida</option>
+                </select>
+
+                <button type="submit">Registrar Movimiento</button>
+            </form>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Insumo</th>
+                        <th>Cantidad</th>
+                        <th>Movimiento</th>
+                        <th>Fecha</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Harina</td>
+                        <td>5 kg</td>
+                        <td>Entrada</td>
+                        <td>20/10/2025</td> 
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- 
+        ============================
+        control de herramientas 
+        ============================
+        registro de estado de herramientas y equipamiento
+         -->
+        <section id="herramientas" class="card">
+            <h2>Registro de Herramientas y Equipamiento</h2>
+            <form>
+                <label for="nombre-herramienta">Nombre de la Herramienta:</label>
+                <input type="text" id="nombre-herramienta" placeholder="Batidora, Cuchillo" required>
+
+                <label for="estado-herramienta">Estado:</label>
+                <select id="estado-herramienta" required>
+                    <option value="disponible">Disponible</option>
+                    <option value="en-reparación">En Reparación</option>
+                </select>
+
+                <button type="submit">Agregar herramienta</button>
+            </form>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Herramienta</th>
+                        <th>Estado</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Batidora</td>
+                        <td>Disponible</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- 
+        ======================
+        control de prestamos
+        ======================
+        registro del control de prestamos de herramientas
+         -->
+        <section id="prestamos" class="card">
+             <h2>Préstamos de Herramientas</h2>
+             <form>
+                <label for="herramienta-prestamo">Herramienta:</label>
+                <input type="text" id="herramienta-prestamo" required>
+
+                <label for="nombre-usuario">Prestado a:</label>
+                <input type="text" id="nombre-usuario" required>
+
+                <label for="fecha-devolución">Fecha de devolución:</label>
+                <input type="date" id="fecha-devolución"> required
+
+                <button type="submit">Registrar Prestamo</button>
+
+             </form>
+
+             <table>
+                <thead>
+                    <tr>
+                        <th>Herramienta</th>
+                        <th>Usuario</th>
+                        <th>Fecha de devolución</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Cuchillo</td>
+                        <td>Roberto Ibarra</td>
+                        <td>25/10/2025</td>
+                    </tr>
+                </tbody>
+             </table>
+        </section>
+    </main>
+
+    <footer>
+        <p>2025 Centro educacional Mariano Latorre</p>
+    </footer>
+    <script src="script.js"></script>
+    </body>
+    </html>
