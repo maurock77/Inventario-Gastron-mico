@@ -25,6 +25,6 @@
 <hr />
 <h2>Licencia</h2><p>Licencia MIT — libre para uso y adaptación. Ajustar según necesidades institucionales.</p>
 <hr />
-<h2>Contacto</h2><p>Proyecto desarrollado para Centro Educacional Mariano Latorre. Para consultas o comentarios sobre el prototipo, abrir un issue en este repositorio o contactar al autor responsable del proyecto (detallar contacto institucional en el repositorio).</p>
+<h2>Contacto</h2><p>Proyecto desarrollado para Centro Educacional Mariano Latorre. Para consultas o comentarios sobre el prototipo, abrir un issue en este repositorio o contactar al autor responsable del proyecto (mauricio henríquez mauro.ahenriquezperez@gmail.com).</p>
 
 
